@@ -1,0 +1,9 @@
+import PyPDF2 as p
+file=open("C:/Users/gurjinder/Desktop/ai.pdf",'rb')
+pd=p.PdfFileReader(file)
+x=pd.getPage(0)
+y=pd.getPage(212)
+print(pd.numPages)
+print(x.extractText())
+print(y.extractText())
+print(pd.documentInfo)
